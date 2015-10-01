@@ -11,4 +11,8 @@ class FlipFlap
   def to_yaml
     @data.to_yaml
   end
+
+  def take_yaml(yml)
+    @data = YAML.load(yml)
+  end
 end
